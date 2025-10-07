@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "Blueace",
+    "slug": "blueace-india",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/ic_launcher-web.png",
+    "platforms": ["android", "ios", "web"],
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/ic_launcher-web.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/ic_launcher-web.png",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice recordings to help you explain issues and concerns more effectively when contacting support.",
+        "NSCameraUsageDescription": "This app accesses the camera to allow you to capture and share photos of issues or documents for better support assistance.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to let you attach existing images of issues or documents when seeking support.",
+        "LSApplicationQueriesSchemes": [
+          "tel",
+          "mailto",
+          "whatsapp"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.blueace.hbs.india"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/ic_launcher-web.png",
+        "backgroundColor": "#58bcfb"
+      },
+      "icon": "./assets/ic_launcher-web.png",
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.hbs.blueacea"
+    },
+    "web": {
+      "favicon": "./assets/ic_launcher-web.png"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Blueace to access your microphone for voice recordings when explaining issues to support staff."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "podfileProperties": {
+              "use_modular_headers!": true
+            }
+          },
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "playStoreIcon": "./assets/playstore-icon.png",
+      "eas": {
+        "projectId": "7d5b7a1a-6edb-4415-8822-663fa679c9fa"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/7d5b7a1a-6edb-4415-8822-663fa679c9fa"
+    }
+  }
+}
